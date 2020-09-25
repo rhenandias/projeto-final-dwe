@@ -1,0 +1,101 @@
+.home-intro {
+	margin: 0 7%;
+	text-align: center;
+}
+
+.home-intro p {
+	font-size: 1.2rem;
+}
+
+.home-intro img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.intro {
+	margin: 0 7%;
+	text-align: center;
+}
+
+.intro p {
+	font-size: 1.2rem;
+}
+
+.timeline {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.timeline-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline-elemento {
+	display: flex;
+}
+
+.timeline-linha {
+	width: 40px;
+	max-width: 40px;
+	align-items: stretch;
+	background-color: lightblue;
+}
+
+/* Bolinha na timeline */
+.timeline-titulo::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	/* left: 20px; */
+	left: 11%;
+	margin-top: 6px;
+  background-color: white;
+  border: 4px solid hotpink;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-titulo {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.timeline-conteudo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+}
+
+.timeline-texto {
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+@media (min-width: 768px) {
+
+	.intro {
+		max-width: 60%;
+	}
+
+	.home-intro {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 15%;
+	}
+
+	.home-intro img {
+		width: 500px;
+	}
+
+	.timeline-linha {
+		width: 20px;
+	}
+
+	.timeline-titulo::after {
+		left: 12.7%
+	}
+}

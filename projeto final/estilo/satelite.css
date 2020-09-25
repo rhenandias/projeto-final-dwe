@@ -1,0 +1,139 @@
+.intro {
+	margin: 0 7%;
+	text-align: center;
+}
+
+.intro p {
+	font-size: 1.2rem;
+}
+
+.satelite {
+	margin-bottom: 30px;
+}
+
+.satelite p {
+	text-align: justify;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.satelite-titulo-grande {
+	display: none;
+}
+
+/*  Animações */
+.quadro-animado {
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	border-radius: 15px;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+.hubble-img {
+	animation-name: imagens_hubble;
+}
+
+@keyframes imagens_hubble {
+	0% {
+		background-image: url("../imagens/hubble.png");
+	}
+	25% {
+		background-image: url("../imagens/hubble2.png");
+	}
+	50% {
+		background-image: url("../imagens/hubble3.png");
+	}
+	75% {
+		background-image: url("../imagens/hubble4.png");
+	}
+	100% {
+		background-image: url("../imagens/hubble.png");
+	}
+}
+
+.sputnik-img {
+	animation-name: imagens_sputnik;
+}
+
+@keyframes imagens_sputnik {
+	0% {
+		background-image: url("../imagens/sputnik.png");
+	}
+	33% {
+		background-image: url("../imagens/sputnik2.png");
+	}
+	66% {
+		background-image: url("../imagens/sputnik3.png");
+	}
+	100% {
+		background-image: url("../imagens/sputnik.png");
+	}
+}
+
+.iss-img {
+	animation-name: imagens_iss;
+}
+
+@keyframes imagens_iss {
+	0% {
+		background-image: url("../imagens/iss.png");
+	}
+	25% {
+		background-image: url("../imagens/iss2.png");
+	}
+	50% {
+		background-image: url("../imagens/iss3.png");
+	}
+	75% {
+		background-image: url("../imagens/iss4.png");
+	}
+	100% {
+		background-image: url("../imagens/iss.png");
+	}
+}
+
+@media (min-width: 768px) {
+	.intro {
+		margin-bottom: 50px;
+	}
+
+	.satelite-titulo-grande {
+		display: inline;
+		text-align: center;
+	}
+
+	.satelite-titulo-pequeno {
+		display: none;
+	}
+
+	.satelite {
+		display: flex;
+	}
+
+	.satelite p {
+		font-size: 1.1rem;
+	}
+
+	.satelite-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.quadro-animado {
+		width: 400px;
+		height: 400px;
+		margin-left: 50px;
+	}
+
+	.satelite #satelite-info {
+		width: 400px;
+		line-height: 2rem;
+	}
+
+	.satelite #satelite-lista {
+		margin-left: 20px;
+	}
+}

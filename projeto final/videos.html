@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<title>Exploração Espacial</title>
+		<link rel="stylesheet" type="text/css" href="estilo/padrao.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/videos.css" />
+		<link rel="icon" href="imagens/foguete.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+  <body>
+		<!--  Menu lateral, quando aberto -->
+		<div id="menu-lateral" class="menu-lateral">
+			<img id="fechar-menu" src="imagens/fechar.png" alt="Fechar" onclick="fecharMenu()">
+			<p>Explore o site!</p>
+			<div class="separador"></div>
+			<div class="links-menu">
+				<a href="index.html"><img src="imagens/home.png" >Página Inicial</a>
+				<a href="videos.html"><img src="imagens/video.png" >videos</a>
+				<a href="satelites.html"><img src="imagens/satellite.png" >Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png" >Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png" >Curiosidades</a>
+			</div>
+			<div class="separador"></div>
+		</div>
+
+		<!--  Cabeçalho da Página -->
+		<header>
+			<!--  Logo da Página -->
+			<div class="logo">
+				<img id="imagem-logo" src="./imagens/logo.png" alt="Icone de video decolando">
+				<h1>Exploração Espacial</h1>
+			</div>
+			<!-- Botão para abrir o menu, não aparece na versão tela grande -->
+			<img id="abrir-menu" src="./imagens/menu.png" alt="Menu lateral" onclick="abrirMenu()">
+
+			<!--  Menu quando em tela grande -->
+			<div class="menu-grande">
+				<a href="index.html"><img src="imagens/home.png">Página Inicial</a>
+				<a href="videos.html"><img src="imagens/video.png">videos</a>
+				<a href="satelites.html"><img src="imagens/satellite.png">Satélites</a>
+				<a href="videos.html" id="menu-atual"><img src="imagens/video.png">Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png">Curiosidades</a>
+			</div>
+		</header>
+
+		<div class="separador"></div>
+
+		<div class="intro">
+			<h1>Vídeos!</h1>
+			<p>Se interessou pelo assunto? Esses são alguns vídeos interessantes sobre exploração espacial</p>
+		</div>
+		
+		<main>
+
+			<!-- Vídeo número 1 -->			
+			<h2 class="video-titulo">Falcon Heavy</h2>
+			<div class="video">
+				<iframe 
+					src="https://www.youtube.com/embed/sX1Y2JMK6g8?rel=0&player=html5" 
+					frameborder="0"
+					allowfullscreen
+				></iframe>
+			</div>
+
+			<!-- Vídeo número 2 -->			
+			<h2 class="video-titulo">Tour pela ISS</h2>
+			<div class="video">
+				<iframe 
+					src="https://www.youtube.com/embed/f4Sqm9q_OJ4" 
+					frameborder="0"
+					allowfullscreen
+				></iframe>
+			</div>
+
+				<!-- Vídeo número 3 -->			
+				<h2 class="video-titulo">Ônibus Espacial</h2>
+				<div class="video">
+					<iframe 
+						src="https://www.youtube.com/embed/Vfp1bzJlQUw" 
+						frameborder="0"
+						allowfullscreen
+					></iframe>
+				</div>
+
+		
+		</main>
+
+		<div class="separador"></div>
+
+		<footer>
+			<div id="info1">
+				<p><b>Exploração Espacial!</b></p>
+				<p>Projeto criado para a disciplina de Desenvolvimento Web no curso de ADS no IFSP Guarulhos.</p>
+			</div>
+			<div id="info2">
+				<img src="imagens/ifsp.png" alt="Logo do IFSP Guarulhos">
+				<p><b>Rhenan Dias Morais, GU3009254</b></p>
+			</div>
+		</footer>
+
+		<script src="./scripts/menu_lateral.js"></script>
+  </body>
+</html>

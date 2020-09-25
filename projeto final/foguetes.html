@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<title>Exploração Espacial</title>
+		<link rel="stylesheet" type="text/css" href="estilo/padrao.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/foguetes.css" />
+		<link rel="icon" href="imagens/foguete.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+  <body>
+		<!--  Menu lateral, quando aberto -->
+		<div id="menu-lateral" class="menu-lateral">
+			<img id="fechar-menu" src="imagens/fechar.png" alt="Fechar" onclick="fecharMenu()">
+			<p>Explore o site!</p>
+			<div class="separador"></div>
+			<div class="links-menu">
+				<a href="index.html"><img src="imagens/home.png" >Página Inicial</a>
+				<a href="foguetes.html"><img src="imagens/foguete.png" >Foguetes</a>
+				<a href="satelites.html"><img src="imagens/satellite.png" >Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png" >Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png" >Curiosidades</a>
+			</div>
+			<div class="separador"></div>
+		</div>
+
+		<!--  Cabeçalho da Página -->
+		<header>
+			<!--  Logo da Página -->
+			<div class="logo">
+				<img id="imagem-logo" src="./imagens/logo.png" alt="Icone de foguete decolando">
+				<h1>Exploração Espacial</h1>
+			</div>
+			<!-- Botão para abrir o menu, não aparece na versão tela grande -->
+			<img id="abrir-menu" src="./imagens/menu.png" alt="Menu lateral" onclick="abrirMenu()">
+
+			<!--  Menu quando em tela grande -->
+			<div class="menu-grande">
+				<a href="index.html"><img src="imagens/home.png">Página Inicial</a>
+				<a href="foguetes.html" id="menu-atual"><img src="imagens/foguete.png">Foguetes</a>
+				<a href="satelites.html"><img src="imagens/satellite.png">Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png">Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png">Curiosidades</a>
+			</div>
+		</header>
+
+		<div class="separador"></div>
+
+		<div class="intro">
+			<h1>Foguetes!</h1>
+			<p>Aqui você pode conhecer um pouco mais sobre os modelos comerciais de foguetes mais populares!</p>
+		</div>
+		
+		<main>
+			<!-- Foguete número 1 -->			
+			<h2 class="foguete-titulo-pequeno">Ariane 5</h2>
+			<div class="foguete">
+				<div class="foguete-img">
+					<img src="imagens/ariane5.png" alt="Foguete Ariane 5" width="500px">
+				</div>
+				<div class="foguete-content">
+					<h2 class="foguete-titulo-grande">Ariane 5</h2>
+					<p id="foguete-info">
+						O Ariane 5 é um foguete descartável projetado para colocar satélites artificiais em órbitas
+						geoestacionárias e em órbitas de baixa altitute. É operado pela empresa francesa <i>Ariane Space</i>
+						sob a supervisão da Agência Espacial Europeia (ESA).
+					</p>
+					<ul id="foguete-lista">
+						<li><p> <b>Altura:</b> 46m a 52m </p></li>
+						<li><p> <b>Diâmetro:</b> 5,4m </p></li>
+						<li><p> <b>Massa:</b> 770t</p></li>
+						<li><p> <b>Custo por Lançamento:</b> US$220M</p></li>
+						<li><p> <b>Página Oficial:</b> <a href="https://www.arianespace.com/vehicle/ariane-5/" target="_blank" >Ariane 5</a></p></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Foguete número 2 -->
+			<h2 class="foguete-titulo-pequeno">Falcon 9</h2>
+			<div class="foguete">
+				<div class="foguete-img">
+					<img src="imagens/falcon9.png" alt="Foguete Falcon 9">
+				</div>
+				<div class="foguete-content">
+					<h2 class="foguete-titulo-grande">Falcon 9</h2>
+					<p id="foguete-info">
+						O Falcon 9 é um foguete de dois estágios projetado e construído pela <i>SpaceX</i> no Estados Unidos. 
+						É conhecido pela sua capacidade de ser parcialmente reutilizável, reduzindo drasticamente os custos
+						de lançamento por massa útil de carga.
+					</p>
+					<ul id="foguete-lista">
+						<li><p> <b>Altura:</b> 70m </p></li>
+						<li><p> <b>Diâmetro:</b> 3,7m </p></li>
+						<li><p> <b>Massa:</b> 330t</p></li>
+						<li><p> <b>Custo por Lançamento:</b> US$50M</p></li>
+						<li><p> <b>Página Oficial:</b> <a href="https://www.spacex.com/vehicles/falcon-9/" target="_blank" >Falcon 9</a></p></li>
+					</ul>
+				</div>
+			</div>
+		
+			<!-- Foguete número 3 -->
+			<h2 class="foguete-titulo-pequeno">Electron</h2>
+			<div class="foguete">
+				<div class="foguete-img">
+					<img src="imagens/electron.png" alt="Foguete Electron">
+				</div>
+				<div class="foguete-content">
+					<h2 class="foguete-titulo-grande">Electron</h2>
+					<p id="foguete-info">
+						O Electron é um foguete no inicio de sua operação comercial, desenvolvido pela 
+						<i>Rocket Lab</i> na Nova Zelândia. É utilizado para pequenos lançamentos, notável
+						por utilizar de novas tecnologias como motores feitos com manufatura de 
+						impressão 3D e acionamentos elétricos.
+					</p>
+					<ul id="foguete-lista">
+						<li><p> <b>Altura:</b> 17m </p></li>
+						<li><p> <b>Diâmetro:</b> 1,2m </p></li>
+						<li><p> <b>Massa:</b> 12t</p></li>
+						<li><p> <b>Custo por Lançamento:</b> US$6M</p></li>
+						<li><p> <b>Página Oficial:</b> <a href="https://www.rocketlabusa.com/electron/" target="_blank" >Electron</a></p></li>
+					</ul>
+				</div>	
+			</div>
+		</main>
+
+		<div class="separador"></div>
+
+		<footer>
+			<div id="info1">
+				<p><b>Exploração Espacial!</b></p>
+				<p>Projeto criado para a disciplina de Desenvolvimento Web no curso de ADS no IFSP Guarulhos.</p>
+			</div>
+			<div id="info2">
+				<img src="imagens/ifsp.png" alt="Logo do IFSP Guarulhos">
+				<p><b>Rhenan Dias Morais, GU3009254</b></p>
+			</div>
+		</footer>
+
+		<script src="./scripts/menu_lateral.js"></script>
+  </body>
+</html>

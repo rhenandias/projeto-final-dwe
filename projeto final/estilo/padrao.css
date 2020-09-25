@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Elementos em comum das páginas */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Dosis', sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+
+footer {
+	margin: 0 5%;
+	align-items: center;
+	text-align: center;
+}
+
+footer #info2 img {
+	width: 60px;
+}
+
+main {
+	margin: 0 7%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.separador {
+	margin: 0 auto;
+	background-color: rgb(173, 173, 173);
+	width: 90%;
+	height: 1px;
+}
+
+/*  Menu Lateral na versão Mobile */
+.menu-lateral p {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.links-menu a {
+	text-decoration: none;
+	display: flex;
+	color: black;
+	font-size: 1.2rem;
+	margin: 30px 0;
+}
+
+.links-menu a img {
+	margin: 0 10px;
+	width: 25px;
+}
+
+#abrir-menu {
+	margin: 0 2%;
+	width: 40px;
+}
+
+#fechar-menu {
+	width: 25px;
+	margin: 15px;
+}
+
+.menu-lateral {
+	display: none;
+	z-index: 1;
+	flex-direction: column;
+	position: fixed;
+	height: 100%;
+	width: 80%;
+	border: 1px solid rgb(173, 173, 173);;
+	background-color: white;
+
+	animation-fill-mode: forwards;
+
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-name: abre_menu;
+}
+
+@keyframes abre_menu {
+	0% {
+		left: 100%;
+	}	
+	100% {
+		left: 20%;
+	}
+}
+
+@keyframes fecha_menu {
+	0% {
+		left: 20%;
+	}	
+	100% {
+		left: 100%;
+	}
+}
+
+/*  Logo da Página */
+#imagem-logo {
+	margin: 0 10px;
+	width: 12%
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo h1 {
+	font-size: 1.4rem;
+}
+
+.menu-grande {
+	display: none;
+}
+
+#menu-atual {
+	position: relative;
+	top: 6px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid lightblue;
+}
+
+
+@media (min-width: 768px) {
+
+	.separador {
+		width: 95%;
+	}
+
+	#imagem-logo {
+		margin: 0 10px;
+		width: 50px;
+	}
+
+	#abrir-menu {
+		display: none;
+	}
+
+	.menu-grande {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-grande a {
+		text-decoration: none;
+		color: black;
+		font-size: 1rem;
+		margin: 0 10px;
+	}
+
+	.menu-grande a img {
+		margin-right: 10px;
+		width: 18px;
+	}
+
+	.menu-grande a:hover {
+		position: relative;
+		top: 6px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid lightblue;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-around;
+		margin: 10px auto;
+	}
+
+	footer #info1 p {
+		width: 300px;
+	}
+}
+
+
+
+

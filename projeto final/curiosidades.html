@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<title>Exploração Espacial</title>
+		<link rel="stylesheet" type="text/css" href="estilo/padrao.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/curiosidades.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/quiz.css" />
+		<link rel="icon" href="imagens/foguete.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+  <body>
+		<!--  Menu lateral, quando aberto -->
+		<div id="menu-lateral" class="menu-lateral">
+			<img id="fechar-menu" src="imagens/fechar.png" alt="Fechar" onclick="fecharMenu()">
+			<p>Explore o site!</p>
+			<div class="separador"></div>
+			<div class="links-menu">
+				<a href="index.html"><img src="imagens/home.png" >Página Inicial</a>
+				<a href="videos.html"><img src="imagens/video.png" >videos</a>
+				<a href="satelites.html"><img src="imagens/satellite.png" >Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png" >Vídeos</a>
+				<a href=""><img src="imagens/ideia.png" >Curiosidades</a>
+			</div>
+			<div class="separador"></div>
+		</div>
+
+		<!--  Cabeçalho da Página -->
+		<header>
+			<!--  Logo da Página -->
+			<div class="logo">
+				<img id="imagem-logo" src="./imagens/logo.png" alt="Icone de video decolando">
+				<h1>Exploração Espacial</h1>
+			</div>
+			<!-- Botão para abrir o menu, não aparece na versão tela grande -->
+			<img id="abrir-menu" src="./imagens/menu.png" alt="Menu lateral" onclick="abrirMenu()">
+
+			<!--  Menu quando em tela grande -->
+			<div class="menu-grande">
+				<a href="index.html"><img src="imagens/home.png">Página Inicial</a>
+				<a href="videos.html"><img src="imagens/video.png">videos</a>
+				<a href="satelites.html"><img src="imagens/satellite.png">Satélites</a>
+				<a href="videos.html" id="menu-atual"><img src="imagens/video.png">Vídeos</a>
+				<a href=""><img src="imagens/ideia.png">Curiosidades</a>
+			</div>
+		</header>
+
+		<div class="separador"></div>
+
+		<div class="intro">
+			<h1>Curiosidades!</h1>
+			<p>Alguma curiosidades aleatórias sobre exploração espacial!</p>
+			<p>E também um pequeno quiz para você testar os seus conhecimentos!</p>
+		</div>
+		
+		<main>
+			
+			<h2 id="curiosidade-titulo-pequeno"></h2>
+			<div class="curiosidade">
+				<img id="curiosidade-imagem">
+				<div class="curiosidade-info">
+					<h2 id="curiosidade-titulo-grande"></h2>
+					<p id="curiosidade-texto"></p>
+					<button id="nova-curiosidade" onclick="novaCuriosidade()">Me mostre outra curiosidade!</button>
+				</div>
+			</div>
+
+		</main>
+
+		<div class="separador"></div>
+		
+		<div class="intro">
+			<h1>Quiz!</h1>
+			<p>Teste os seus conhecimentos sobre algumas curiosidades espaciais!</p>
+		</div>
+
+		<div class="separador"></div>
+
+		<form onsubmit="event.preventDefault(); corrigirQuiz()">
+		<!--  Pergunta 1 -->
+			<p id="pergunta-titulo">Pergunta 1:</p>
+			<div id="resultado_1" class="resultado">
+				<img src="">
+				<p></p>
+			</div>
+			<p id="pergunta-texto">Qual é o planeta mais quente no sistema solar?</p>
+			<div class="resposta">
+				<input id="q1_r1" name="pergunta_1" type="radio" value="errado">
+				<label for="q1_r1">Mercúrio</label>
+			</div>
+			<div class="resposta">
+				<input id="q1_r2" name="pergunta_1" type="radio" value="errado">
+				<label for="q1_r2">Marte</label>
+			</div>
+			<div class="resposta">
+				<input id="q1_r3" name="pergunta_1" type="radio" value="certo">
+				<label for="q1_r3">Vênus</label>
+			</div>
+
+			<div class="separador"></div>
+			<!-- Pergunta 2 -->
+			<p id="pergunta-titulo">Pergunta 2:</p>
+			<div id="resultado_2" class="resultado">
+				<img src="">
+				<p></p>
+			</div>
+			<p id="pergunta-texto">Quanto tempo dura o movimento de rotação da Terra?</p>
+			<div class="resposta">
+				<input id="q2_r1" name="pergunta_2" type="radio" value="certo">
+				<label for="q2_r1">23 horas, 56 minutos e 4 segundos</label>
+			</div>
+			<div class="resposta">
+				<input id="q2_r2" name="pergunta_2" type="radio" value="errado">
+				<label for="q2_r2">24 horas, lógico!</label>
+			</div>
+			<div class="resposta">
+				<input id="q2_r3" name="pergunta_2" type="radio" value="errado">
+				<label for="q2_r3">24 horas, 2 minutos e 1 segundo</label>
+			</div>
+			
+			<div class="separador"></div>
+			<!-- Pergunta 3 -->
+			<p id="pergunta-titulo">Pergunta 3:</p>
+			<div id="resultado_3" class="resultado">
+				<img src="">
+				<p></p>
+			</div>
+			<p id="pergunta-texto">Em que planeta está localizado o maior vulcão do sistema solar?</p>
+			<div class="resposta">
+				<input id="q3_r1" name="pergunta_3" type="radio" value="errado">
+				<label for="q3_r1">Na Terra, dããã! </label>
+			</div>
+			<div class="resposta">
+				<input id="q3_r2" name="pergunta_3" type="radio" value="certo">
+				<label for="q3_r2">Em Marte</label>
+			</div>
+			<div class="resposta">
+				<input id="q3_r3" name="pergunta_3" type="radio" value="errado">
+				<label for="q3_r3">Em Júpiter</label>
+			</div>
+
+			<div class="separador"></div>
+			<!-- Pergunta 4 -->
+			<p id="pergunta-titulo">Pergunta 4:</p>
+			<div id="resultado_4" class="resultado">
+				<img src="">
+				<p></p>
+			</div>
+			<p id="pergunta-texto">Em que ano ocorreu o primeiro pouso do homem na lua??</p>
+			<div class="resposta">
+				<input id="q4_r1" name="pergunta_4" type="radio" value="errado">
+				<label for="q4_r1">Em 1975</label>
+			</div>
+			<div class="resposta">
+				<input id="q4_r2" name="pergunta_4" type="radio" value="errado">
+				<label for="q4_r2">Em 2001, eu lembro!</label>
+			</div>
+			<div class="resposta">
+				<input id="q4_r3" name="pergunta_4" type="radio" value="certo">
+				<label for="q4_r3">Em 1969</label>
+			</div>
+
+			<div class="separador"></div>
+			<!-- Pergunta 5 -->
+			<p id="pergunta-titulo">Pergunta 5:</p>
+			<div id="resultado_5" class="resultado">
+				<img src="">
+				<p></p>
+			</div>
+			<p id="pergunta-texto">Qual o nome do programa espacial americano que levou o homem a lua?</p>
+			<div class="resposta">
+				<input id="q5_r1" name="pergunta_5" type="radio" value="certo">
+				<label for="q5_r1">Apollo, eu vi o filme hehe</label>
+			</div>
+			<div class="resposta">
+				<input id="q5_r2" name="pergunta_5" type="radio" value="errado">
+				<label for="q5_r2">Comando Estelar</label>
+			</div>
+			<div class="resposta">
+				<input id="q5_r3" name="pergunta_5" type="radio" value="certo">
+				<label for="q5_r3">StarWars</label>
+			</div>
+
+			<button id="botao-quiz" type="submit">Enviar Respostas</button>
+		</form>
+
+		<div class="separador"></div>
+
+		<div id="resultado-final" class="resultado-final">
+			<p id="titulo-resultado-final"></p>
+			<img id="imagem-resultado-final" src="" alt="">
+			<p id="pontos-finais"></p>
+			<p id="comentario-resultado-final"></p>
+		</div>
+		
+		<div class="separador"></div>
+
+		<footer id="fim">
+			<div id="info1">
+				<p><b>Exploração Espacial!</b></p>
+				<p>Projeto criado para a disciplina de Desenvolvimento Web no curso de ADS no IFSP Guarulhos.</p>
+			</div>
+			<div id="info2">
+				<img src="imagens/ifsp.png" alt="Logo do IFSP Guarulhos">
+				<p><b>Rhenan Dias Morais, GU3009254</b></p>
+			</div>
+		</footer>
+
+		<script src="./scripts/menu_lateral.js"></script>
+		<script src="./scripts/curiosidades.js"></script>
+		<script src="./scripts/quiz.js"></script>
+  </body>
+</html>

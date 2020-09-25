@@ -1,0 +1,34 @@
+.intro {
+	margin: 0 7%;
+	text-align: center;
+}
+
+.intro p {
+	font-size: 1.2rem;
+}
+
+.video {
+	margin-bottom: 30px;
+}
+
+
+iframe {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.intro {
+		margin-bottom: 50px;
+	}
+
+	.video {
+		display: flex;
+	}
+
+	iframe {
+		width: 800px;
+		height: 500px;
+		border-radius: 15px;
+	}
+
+}

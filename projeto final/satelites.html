@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<title>Exploração Espacial</title>
+		<link rel="stylesheet" type="text/css" href="estilo/padrao.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/satelite.css" />
+		<link rel="icon" href="imagens/foguete.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+  <body>
+		<!--  Menu lateral, quando aberto -->
+		<div id="menu-lateral" class="menu-lateral">
+			<img id="fechar-menu" src="imagens/fechar.png" alt="Fechar" onclick="fecharMenu()">
+			<p>Explore o site!</p>
+			<div class="separador"></div>
+			<div class="links-menu">
+				<a href="index.html"><img src="imagens/home.png" >Página Inicial</a>
+				<a href="foguetes.html"><img src="imagens/foguete.png" >Foguetes</a>
+				<a href="satelites.html"><img src="imagens/satellite.png" >Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png" >Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png" >Curiosidades</a>
+			</div>
+			<div class="separador"></div>
+		</div>
+
+		<!--  Cabeçalho da Página -->
+		<header>
+			<!--  Logo da Página -->
+			<div class="logo">
+				<img id="imagem-logo" src="./imagens/logo.png" alt="Icone de foguete decolando">
+				<h1>Exploração Espacial</h1>
+			</div>
+			<!-- Botão para abrir o menu, não aparece na versão tela grande -->
+			<img id="abrir-menu" src="./imagens/menu.png" alt="Menu lateral" onclick="abrirMenu()">
+
+			<!--  Menu quando em tela grande -->
+			<div class="menu-grande">
+				<a href="index.html"><img src="imagens/home.png">Página Inicial</a>
+				<a href="foguetes.html"><img src="imagens/foguete.png">Foguetes</a>
+				<a href="satelites.html" id="menu-atual"><img src="imagens/satellite.png">Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png">Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png">Curiosidades</a>
+			</div>
+		</header>
+
+		<div class="separador"></div>
+
+		<div class="intro">
+			<h1>Satélites!</h1>
+			<p>
+				Conheça um pouco mais sobre satelites artificiais e veja algumas imagens do nosso universo e desses equipamentos.
+			</p>
+		</div>
+		
+		<main>
+			<!-- Satélite número 1 -->			
+			<h2 class="satelite-titulo-pequeno">Hubble</h2>
+			<div class="satelite">
+				<div class="satelite-content">
+					<h2 class="satelite-titulo-grande">Hubble</h2>
+					<p id="satelite-info">
+						O Telescópio Espacial Hubble é um satélite artificial não tripulado que 
+						transporta um grande telescópio para luz visível e infravermelha.
+						Foi lançado pela NASA, agência espacial estadunidense, em 24 de abril de 1990,
+						e já recebeu várias visitas de manutenção.
+					</p>
+				</div>
+				<div class="quadro-animado hubble-img"></div>
+			</div>
+
+			<!-- Satélite número 2 -->			
+			<h2 class="satelite-titulo-pequeno">Sputnik</h2>
+			<div class="satelite">
+				<div class="satelite-content">
+					<h2 class="satelite-titulo-grande">Sputnik</h2>
+					<p id="satelite-info">
+						Em 4 de outubro de 1957, foi colocado em órbita, pela União Soviética, 
+						o primeiro satélite artificial, o Sputnik 1, que tinha 58 centímetros de diâmetro 
+						e pesava 83,6 quilos e que levou 98 minutos para ser colocado em uma órbita elíptica
+						 ao redor da Terra. Esse fato marcou o início da corrida espacial entre a União Soviética 
+						 e os Estados Unidos. 
+					</p>
+				</div>
+				<div class="quadro-animado sputnik-img"></div>
+			</div>
+
+			<!-- Satélite número 3 -->			
+			<h2 class="satelite-titulo-pequeno">Estação Espacial Internacional</h2>
+			<div class="satelite">
+				<div class="satelite-content">
+					<h2 class="satelite-titulo-grande">Estação Espacial Internacional</h2>
+					<p id="satelite-info">
+						A Estação Espacial Internacional também pode ser considerada um satélite
+						artificial, pois orbita a terra de maneira constante, cuja montagem em órbita 
+						começou em 1998 e terminou oficialmente em 8 de julho de 2011. Desde a data
+						de finalização, tem sido tripulada de maneira constante, durante 21 anos em órbita.
+					</p>
+				</div>
+				<div class="quadro-animado iss-img"></div>
+			</div>
+		</main>
+
+		<div class="separador"></div>
+
+		<!-- Rodapé da Página -->
+		<footer>
+			<div id="info1">
+				<p><b>Exploração Espacial!</b></p>
+				<p>Projeto criado para a disciplina de Desenvolvimento Web no curso de ADS no IFSP Guarulhos.</p>
+			</div>
+			<div id="info2">
+				<img src="imagens/ifsp.png" alt="Logo do IFSP Guarulhos">
+				<p><b>Rhenan Dias Morais, GU3009254</b></p>
+			</div>
+		</footer>
+
+		<script src="./scripts/menu_lateral.js"></script>
+  </body>
+</html>

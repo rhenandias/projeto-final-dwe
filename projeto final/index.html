@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<title>Exploração Espacial</title>
+		<link rel="stylesheet" type="text/css" href="estilo/padrao.css" />
+		<link rel="stylesheet" type="text/css" href="estilo/home.css" />
+		<link rel="icon" href="imagens/foguete.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+  <body>
+		<!--  Menu lateral, quando aberto -->
+		<div id="menu-lateral" class="menu-lateral">
+			<img id="fechar-menu" src="imagens/fechar.png" alt="Fechar" onclick="fecharMenu()">
+			<p>Explore o site!</p>
+			<div class="separador"></div>
+			<div class="links-menu">
+				<a href="index.html"><img src="imagens/home.png" >Página Inicial</a>
+				<a href="foguetes.html"><img src="imagens/foguete.png" >Foguetes</a>
+				<a href="satelites.html"><img src="imagens/satellite.png" >Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png" >Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png" >Curiosidades</a>
+			</div>
+			<div class="separador"></div>
+		</div>
+
+		<!--  Cabeçalho da Página -->
+		<header>
+			<!--  Logo da Página -->
+			<div class="logo">
+				<img id="imagem-logo" src="./imagens/logo.png" alt="Icone de foguete decolando">
+				<h1>Exploração Espacial</h1>
+			</div>
+			<!-- Botão para abrir o menu, não aparece na versão tela grande -->
+			<img id="abrir-menu" src="./imagens/menu.png" alt="Menu lateral" onclick="abrirMenu()">
+
+			<!--  Menu quando em tela grande -->
+			<div class="menu-grande">
+				<a href="index.html" id="menu-atual"><img src="imagens/home.png">Página Inicial</a>
+				<a href="foguetes.html"><img src="imagens/foguete.png">Foguetes</a>
+				<a href="satelites.html"><img src="imagens/satellite.png">Satélites</a>
+				<a href="videos.html"><img src="imagens/video.png">Vídeos</a>
+				<a href="curiosidades.html"><img src="imagens/ideia.png">Curiosidades</a>
+			</div>
+		</header>
+
+		<div class="separador"></div>
+
+		<div class="home-intro">
+			<div>
+				<h1>Exploração Espacial!</h1>
+				<p>
+					Nesse site você vai poder conhecer um pouco mais sobre a história da exploração espacial.
+					Você pode ler sobre foguetes, ver alguns vídeos e fotos de satélites ou testar os seus
+					conhecimentos com algumas curiosidades. 
+				</p>
+			</div>
+			<img src="imagens/space.png" alt="Exploração espacial">
+		</div>
+
+		<div class="separador"></div>
+
+		<main>
+
+			<div class="intro">
+				<h2>Linha do tempo</h1>
+					<p>
+						Que tal começar conhecendo um pouco mais sobre acontecimentos históricos em uma
+						linha do tempo da exploração espacial?
+					</p>
+		</div>
+		
+		<main>
+			<div class="timeline">
+				<!--  Elemento 1 da Linha do Tempo -->
+				<div class="timeline-linha"></div>
+				<div class="timeline-left">
+					<div class="timeline-elemento">
+						
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1957
+							</p>
+							<p class="timeline-texto">
+								Os dois primeiros satélites artificiais entram em órbita. Os dispositivos
+								russos Sputnik 1 e Sputnik 2 eram satélites de teste da União Soviética.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 2 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1958
+							</p>
+							<p class="timeline-texto">
+								Explorer, o primeiro satélite artificial americano entra em órbita terrestre.
+								Os americanos saem atrás no início da corrida espacial. No fim do mesmo ano,
+								é fundada a NASA, a Agência Espacial americana.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1961
+							</p>
+							<p class="timeline-texto">
+								A espaçonave Vostok 1 é lançada pela União Soviética, com o cosmonauta
+								Yuri Gagarin, o primeiro homem a atingir e retornar com segurança a órbita terrestre.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 4 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1962
+							</p>
+							<p class="timeline-texto">
+								Novamente os americanos ficam para trás na corrida espacial, e só conseguem mandar
+								o primeiro astronauta americano para a órbita terrestre um ano após os soviéticos.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1968
+							</p>
+							<p class="timeline-texto">
+								É a vez dos Estados Unidos avançarem na corrida, e em dezembro deste ano
+								a nave Apollo 8 torna-se a primeira missão tripulada a orbitar a lua
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1969
+							</p>
+							<p class="timeline-texto">
+								Finalmente após inúmeros fracassos seguidos da União Soviética, a Apollo 11
+								americana torna-se a primeira missão tripulada a pousar na Lua.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1973
+							</p>
+							<p class="timeline-texto">
+								A corrida espacial termina, e Rússia e Estados Unidos unem forças e começam
+								a construção do SkyLab, um laboratório em órbita que seria o precedente 
+								da Estação Espacial Internacional.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1981
+							</p>
+							<p class="timeline-texto">
+								O inicio do programa de ônibus espaciais dos Estados Unidos, com a espaçonave
+								Columbia, que completa com sucesso uma missão de ida e volta a órbita terrestre.
+							</p>
+						</div>
+					</div>
+					<!--  Elemento 3 da Linha do Tempo -->
+					<div class="timeline-elemento">
+						<div class="timeline-conteudo">
+							<p class="timeline-titulo">
+								1990
+							</p>
+							<p class="timeline-texto">
+								O telescópio espacial Hubble é lançado ao espaço! Muitas imagens que conhecemos 
+								e vemos por aí na internet, são tiradas pelo Hubble, durante suas décadas de operação.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<div class="intro">
+			<h2>Vá em frente!</h1>
+				<p>
+					Esse são apenas alguns dos eventos históricos envolvendo a esploração espacial.
+					Se fôssemos listar todos, a lista ficaria enorme!
+				</p>
+			</div>
+		</main>
+		
+			<div class="separador"></div>
+			
+			<footer>
+				<div id="info1">
+				<p><b>Exploração Espacial!</b></p>
+				<p>Projeto criado para a disciplina de Desenvolvimento Web no curso de ADS no IFSP Guarulhos.</p>
+			</div>
+			<div id="info2">
+				<img src="imagens/ifsp.png" alt="Logo do IFSP Guarulhos">
+				<p><b>Rhenan Dias Morais, GU3009254</b></p>
+			</div>
+		</footer>
+		<script src="./scripts/menu_lateral.js"></script>
+  </body>
+</html>
