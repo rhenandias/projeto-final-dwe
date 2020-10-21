@@ -1,4 +1,4 @@
-# Projeto Final de DWR
+# Projeto Final de DWE
 Projeto desenvolvido durante a discplina de Desenvolvimento Web do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas no IFSP Guarulhos.
 
 ## Confira o projeto: [Projeto Final](https://projeto-final-dwe.vercel.app)
